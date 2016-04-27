@@ -1,4 +1,4 @@
 
 get '/' do
-  redirect '/templates'
+  erb :'index'
 end

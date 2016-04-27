@@ -6,7 +6,7 @@ $(document).ready(function() {
   // when we try to bind to them
   appendCoolForm();
   submitCoolForm();
-
+  editAccount();
 
 });
 //when write blog link is clicked
@@ -17,6 +17,12 @@ $(document).ready(function() {
 //the form partial when filled out will append a new partial containing the new element you created
 //the "enter a new post button will return"
 //the form partial will disappear
+var editAccount = function(event){
+  event.preventDefault();
+  $('#openBtn').click(function(){
+  $('#myModal').modal({show:true})
+});
+};
 
 function appendCoolForm(){
   $(document).on('click', 'a.button', function(e){
